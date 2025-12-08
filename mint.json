@@ -457,7 +457,6 @@
   "api": {
     "baseUrl": "https://api.mintlify.com"
   },
-  "versions": [],
   "modeToggle": {
     "default": "dark",
     "isHidden": false
