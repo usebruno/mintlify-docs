@@ -1,0 +1,16 @@
+{
+  "name": "bruno-docs-mintlify",
+  "version": "1.0.0",
+  "description": "Bruno Documentation built with Mintlify",
+  "private": true,
+  "scripts": {
+    "dev": "mint dev",
+    "install": "npm i -g mint",
+    "lint": "prettier --check .",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0"
+  }
+}
+

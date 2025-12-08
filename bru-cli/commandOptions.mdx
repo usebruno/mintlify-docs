@@ -1,0 +1,124 @@
+---
+title: "Command Options"
+---
+
+Bruno CLI provides a variety of command options to help you customize your API testing and execution process. These options allow you to specify environments, configure reports, handle security, and much more. Below is a comprehensive list of available options:
+
+## Options 
+
+To use options, add them to the bru run command after you specify the collection file or folder:
+
+```bash
+bru run [options]
+```
+
+To view a list of available options for Bruno CLI, run the following command:
+
+```bash
+bru run -h
+```
+
+### Basic options
+
+| Option                       | Details                                                                       |
+| ---------------------------- | ----------------------------------------------------------------------------- |
+| `-h`, `--help`              | Output usage information                                                      |
+| `--version`                 | Output the version number                                                     |
+
+### Setup options
+
+| Option                       | Details                                                                       |
+| ---------------------------- | ----------------------------------------------------------------------------- |
+| `--env [string]`            | Specify environment to run with                                               |
+| `--env-var [string]`        | Overwrite a single environment variable, multiple usages possible             |
+| `--env-file [string]`       | Path to the environment file (.bru or .json) to use for the collection run            |
+| `--sandbox [string]`        | Javascript sandbox to use; available sandboxes are "developer" (default) or "safe" [string] [default: "developer"] |
+| `--csv-file-path`           | CSV file to run the collection with                                           |
+| `--json-file-path`           | Path to the JSON data file                                                   |             
+| `--iteration-count [number]` | Number of times to run the collection                                        |
+| `-r`                        | Indicates a recursive run [boolean] [default: false]                          |
+
+### Request options
+
+| Option                       | Details                                                                       |
+| ---------------------------- | ----------------------------------------------------------------------------- |
+| `--delay [number]`          | Delay between each requests (in milliseconds)                                 |
+| `--tests-only`              | Only run requests that have tests or active assertions                        |
+| `--bail`                    | Stop execution after a failure of a request, test, or assertion               |
+| `--tags [string]`   | Only run requests that have ALL of the specified tags (comma-separated)        |
+| `--exclude-tags [string]`   | Skip requests that have ANY of the specified tags (comma-separated)           |
+| `--parallel`                | Run requests in parallel order                            |
+
+### SSL & Security options
+
+| Option                       | Details                                                                       |
+| ---------------------------- | ----------------------------------------------------------------------------- |
+| `--cacert [string]`         | CA certificate to verify peer against                                         |
+| `--ignore-truststore`       | Use custom CA certificate exclusively and ignore default truststore [boolean] [default: false] |
+| `--client-cert-config`      | Path to the Client certificate config file used for securing the connection   |
+| `--insecure`                | Allow insecure server connections                                             |
+| `--disable-cookies`         | Automatically save and send cookies with requests [boolean] [default: false] |
+| `--noproxy`                 | Disable all proxy settings (both collection-defined and system proxies) [boolean] [default: false] |
+
+### Output & Reporting options
+
+| Option                       | Details                                                                       |
+| ---------------------------- | ----------------------------------------------------------------------------- |
+| `-o`, `--output [string]`   | **[DEPRECATED]** Path to write file results to. Use reporter options instead  |
+| `-f`, `--format [string]`   | **[DEPRECATED]** Format of the file results. Use reporter options instead     |
+| `--reporter-json [string]`  | Path to generate a JSON report                                                |
+| `--reporter-junit [string]` | Path to generate a JUnit report                                               |
+| `--reporter-html [string]`  | Path to generate an HTML report                                               |
+| `--reporter-skip-all-headers` | Skip all headers in the report [boolean] [default: false]                   |
+| `--reporter-skip-headers`   | Skip specific headers in the report [array] [default: []]                     |
+
+### Import options
+
+| Option                       | Details                                                                       |
+| ---------------------------- | ----------------------------------------------------------------------------- |
+| `--source [string]`         | Path to the OpenAPI specification file (YAML or JSON)                         |
+| `--output-file [string]`    | Output file to export as Bruno collection in JSON format                      |
+| `--collection-name [string]` | Name for the imported collection from OpenAPI                                 |
+
+## Examples
+
+This will run all the requests in your collection.
+
+
+```bash copy
+bru run
+```
+
+You can also run specific files or folders:
+
+```bash copy
+# Run a single file
+bru run request.bru
+
+# Run multiple files
+bru run request1.bru request2.bru
+
+# Run a folder
+bru run folder
+
+# Run multiple folders
+bru run folder1 folder2
+
+# Mix of files and folders
+bru run folder1 request1.bru folder2 request2.bru
+```
+
+---
+
+## Next Steps
+
+Now that you're familiar with the command options, explore these guides to get the most out of Bruno CLI:
+
+1. [Run a Collection](/bru-cli/runCollection) - Learn how to execute your collections with the above command options
+2. [Import Data](/bru-cli/import) - Import OpenAPI and WSDL specifications into Bruno collections
+3. [Generate Reports](/bru-cli/builtInReporters) - Create detailed test reports in multiple formats
+
+---
+
+## Support
+If you encounter any issues or have any feedback or suggestions, please raise them on our [GitHub repository <strong><sup>↗</sup></strong>](https://github.com/usebruno/bruno)
