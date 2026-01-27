@@ -3,8 +3,8 @@ title: "Convert OpenAPI to Bruno collection"
 sidebarTitle: "OpenAPI to Bruno"
 ---
 
-<Tabs items={['JSON', 'YAML']}>
-  <Tabs.Tab>
+<Tabs>
+  <Tab title="JSON">
   ### Convert OpenAPI JSON to Bruno collection
 
   ```javascript
@@ -13,7 +13,7 @@ sidebarTitle: "OpenAPI to Bruno"
   const brunoCollection = openApiToBruno(openApiSpecification);
   ```
 
-  ```javascript showLineNumbers filename="openapi-json-to-bruno.js"
+  ```javascript 
   const { openApiToBruno } = require('@usebruno/converters');
   const { readFile, writeFile } = require('fs/promises');
 
@@ -36,8 +36,8 @@ sidebarTitle: "OpenAPI to Bruno"
   
   convertOpenApiToBruno('path/to/openapi-spec.json', 'path/to/bruno-collection.json');
   ```
-  </Tabs.Tab>
-  <Tabs.Tab>
+  </Tab>
+  <Tab title="YAML">
   ### Convert OpenAPI YAML to Bruno collection
 
   ```javascript
@@ -60,5 +60,5 @@ async function testOpenApiConversion(yamlFile, outputFile) {
 
 testOpenApiConversion('path/to/your/openapi.yaml', 'path/to/bruno-collection.json');
 ```
-  </Tabs.Tab>
+  </Tab>
 </Tabs>

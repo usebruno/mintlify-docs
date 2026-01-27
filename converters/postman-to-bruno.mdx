@@ -3,8 +3,8 @@ title: "Postman Conversions"
 sidebarTitle: "Postman to Bruno"
 ---
 
-<Tabs items={['Collection', 'Environment']}>
-  <Tabs.Tab>
+<Tabs>
+  <Tab title="Collection">
   ### Convert Postman collection to Bruno collection
 
   ```javascript
@@ -13,7 +13,7 @@ sidebarTitle: "Postman to Bruno"
   const brunoCollection = postmanToBruno(postmanCollection);
   ```
 
-  ```javascript showLineNumbers filename="postman-to-bruno.js"
+  ```javascript
   const { postmanToBruno } = require('@usebruno/converters');
   const { readFile, writeFile } = require('fs/promises');
   const path = require('path');
@@ -21,7 +21,7 @@ sidebarTitle: "Postman to Bruno"
   async function convertPostmanToBruno(inputFile, outputFile) {
     try {
       const inputData = await readFile(inputFile, 'utf8');
-      const brunoCollection = await postmanToBruno(JSON.parse(inputData));
+      const brunoCollection = postmanToBruno(JSON.parse(inputData));
       await writeFile(outputFile, JSON.stringify(brunoCollection, null, 2));
       console.log('Conversion successful!');
     } catch (error) {
@@ -34,8 +34,8 @@ sidebarTitle: "Postman to Bruno"
     path.join(__dirname, 'demo_collection.bruno_collection.json')
   );
   ```
-  </Tabs.Tab>
-  <Tabs.Tab>
+  </Tab>
+  <Tab title="Environment">
   ### Convert Postman Environment to Bruno Environment
 
   ```javascript
@@ -44,7 +44,7 @@ sidebarTitle: "Postman to Bruno"
   const brunoEnvironment = postmanToBrunoEnvironment(postmanEnvironment);
   ```
 
-  ```javascript showLineNumbers filename="postman-env-to-bruno.js"
+  ```javascript 
   const { postmanToBrunoEnvironment } = require('@usebruno/converters');
   const { readFile, writeFile } = require('fs/promises');
   const path = require('path');
@@ -65,5 +65,5 @@ sidebarTitle: "Postman to Bruno"
     path.join(__dirname, 'demo_environment.bruno_environment.json')
   );
   ```
-  </Tabs.Tab>
+  </Tab>
 </Tabs>
