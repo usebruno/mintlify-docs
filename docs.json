@@ -12,11 +12,10 @@
     "versions": [
       {
         "version": "v3",
-        "anchors": [
-          {
-            "anchor": "Documentation",
-            "icon": "book-open",
             "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
               {
                 "group": "Introduction",
                 "pages": [
@@ -25,9 +24,6 @@
                   "introduction/feedback-community"
                 ]
               },
-              {
-                "group": "Getting Started",
-                "pages": [
                   {
                     "group": "Bruno Basics",
                     "pages": [
@@ -54,10 +50,10 @@
                     "group": "Configure",
                     "pages": [
                       "get-started/configure/settings",
-                      "get-started/configure/proxy-config",
-                      "get-started/configure/javascript-sandbox"
+                  "get-started/configure/proxy-config",
+                  "get-started/configure/javascript-sandbox"
                     ]
-                  }
+              }
                 ]
               },
               {
@@ -117,18 +113,10 @@
                           "send-requests/res-data-cookies/overview",
                           "send-requests/res-data-cookies/res-data",
                           "send-requests/res-data-cookies/cookies",
-                          "send-requests/res-data-cookies/response-examples",
-                          {
-                            "group": "Debugging",
-                            "pages": [
-                              "send-requests/res-data-cookies/debugging/dev-utils",
-                              "send-requests/res-data-cookies/debugging/dev-tools",
-                              "send-requests/res-data-cookies/debugging/timeline"
-                            ]
-                          }
-                        ]
-                      },
-                      "send-requests/history"
+                      "send-requests/res-data-cookies/response-examples"
+                    ]
+                  },
+                  "send-requests/history"
                     ]
                   },
                   {
@@ -287,6 +275,13 @@
                       },
                       "auth/add-and-manage-certs"
                     ]
+              },
+              {
+                "group": "Debugging",
+                "pages": [
+                  "debugging/timeline",
+                  "debugging/dev-tools"
+                    ]
                   }
                 ]
               },
@@ -342,12 +337,12 @@
                       "bru-lang/syntax-highlighting"
                     ]
                   },
-                  {
-                    "group": "OpenCollection YAML",
-                    "pages": [
-                      "opencollection-yaml/overview",
-                      "opencollection-yaml/samples",
-                      "opencollection-yaml/structure-reference"
+              {
+                "group": "OpenCollection YAML",
+                "pages": [
+                  "opencollection-yaml/overview",
+                  "opencollection-yaml/samples",
+                  "opencollection-yaml/structure-reference"
                     ]
                   },
                   {
@@ -410,19 +405,13 @@
                 "group": "Advanced Guides",
                 "pages": [
                   "advanced-guides/starter-guide",
-                  "advanced-guides/visualize"
-                ]
-              }
+              "advanced-guides/visualize"
             ]
           }
         ]
       },
       {
         "version": "v2",
-        "anchors": [
-          {
-            "anchor": "Documentation",
-            "icon": "book-open",
             "groups": [
               {
                 "group": "Introduction",
@@ -433,7 +422,7 @@
                 ]
               },
               {
-                "group": "Getting Started",
+            "group": "Getting Started",
                 "pages": [
                   {
                     "group": "Bruno Basics",
@@ -460,10 +449,10 @@
                     "group": "Configure",
                     "pages": [
                       "v2/get-started/configure/settings",
-                      "v2/get-started/configure/proxy-config",
-                      "v2/get-started/configure/javascript-sandbox"
+                  "v2/get-started/configure/proxy-config",
+                  "v2/get-started/configure/javascript-sandbox"
                     ]
-                  }
+              }
                 ]
               },
               {
@@ -533,8 +522,8 @@
                             ]
                           }
                         ]
-                      },
-                      "v2/send-requests/history"
+                  },
+                  "v2/send-requests/history"
                     ]
                   },
                   {
@@ -745,12 +734,12 @@
                       "v2/bru-lang/syntax-highlighting"
                     ]
                   },
-                  {
-                    "group": "OpenCollection YAML",
-                    "pages": [
-                      "v2/opencollection-yaml/overview",
-                      "v2/opencollection-yaml/samples",
-                      "v2/opencollection-yaml/structure-reference"
+              {
+                "group": "OpenCollection YAML",
+                "pages": [
+                  "v2/opencollection-yaml/overview",
+                  "v2/opencollection-yaml/samples",
+                  "v2/opencollection-yaml/structure-reference"
                     ]
                   },
                   {
@@ -813,32 +802,14 @@
                 "group": "Advanced Guides",
                 "pages": [
                   "v2/advanced-guides/starter-guide",
-                  "v2/advanced-guides/visualize"
-                ]
-              }
+              "v2/advanced-guides/visualize"
             ]
           }
         ]
       }
     ],
     "global": {
-      "anchors": [
-        {
-          "anchor": "GitHub",
-          "href": "https://github.com/usebruno/bruno",
-          "icon": "github"
-        },
-        {
-          "anchor": "Discord",
-          "href": "https://discord.com/invite/KgcZUncpjq",
-          "icon": "discord"
-        },
-        {
-          "anchor": "Documentation Repo",
-          "href": "https://github.com/usebruno/bruno-docs",
-          "icon": "book"
-        }
-      ]
+      "anchors": []
     }
   },
   "logo": {
@@ -857,15 +828,26 @@
   "navbar": {
     "links": [
       {
-        "label": "Discord",
-        "href": "https://discord.com/invite/KgcZUncpjq"
+        "label": "API Reference",
+        "href": "/testing/script/javascript-reference"
+      },
+      {
+        "label": "Blog",
+        "href": "https://blog.usebruno.com"
+      },
+      {
+        "label": "Support",
+        "href": "https://www.usebruno.com/support"
+      },
+      {
+        "label": "Changelog",
+        "href": "https://www.usebruno.com/changelog"
+      },
+      {
+        "label": "Roadmap",
+        "href": "https://www.usebruno.com/roadmap"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "GitHub",
-      "href": "https://github.com/usebruno/bruno"
-    }
+    ]
   },
   "search": {
     "prompt": "Search documentation..."
@@ -879,13 +861,8 @@
   "contextual": {
     "options": [
       "copy",
-      "view",
       "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+      "claude"
     ]
   },
   "feedback": {

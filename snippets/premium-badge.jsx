@@ -4,13 +4,15 @@ export const PremiumBadge = ({ noLink }) => {
       style={{
         display: 'inline-flex',
         alignItems: 'center',
-        padding: '0.125rem 0.5rem',
+        gap: '0.25rem',
+        padding: '0.25rem 0.5rem',
         fontSize: '0.75rem',
         fontWeight: '600',
-        borderRadius: '9999px',
-        backgroundColor: '#FEF3C7',
+        borderRadius: '0.5rem',
+        backgroundColor: '#FCD34D',
         color: '#92400E',
-        marginLeft: '0.5rem'
+        marginLeft: '0.5rem',
+        lineHeight: '1.2'
       }}
     >
       PREMIUM

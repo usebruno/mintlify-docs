@@ -30,6 +30,7 @@ export const BrunoButton = ({
           alt="Fetch in Bruno" 
           width={width} 
           height={height}
+          noZoom
           style={{ 
             width: `${width}px`, 
             height: `${height}px`,
