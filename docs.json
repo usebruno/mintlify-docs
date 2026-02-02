@@ -292,11 +292,11 @@
                     "group": "Create Documentation",
                     "pages": [
                       "api-docs/overview",
-                      "api-docs/auto-generate-docs",
                       "api-docs/workspace-docs",
                       "api-docs/collection-docs",
                       "api-docs/folder-docs",
-                      "api-docs/request-docs"
+                      "api-docs/request-docs",
+                      "api-docs/auto-generate-docs"
                     ]
                   },
                   {
@@ -732,14 +732,6 @@
                       "v2/bru-lang/tag-reference",
                       "v2/bru-lang/samples",
                       "v2/bru-lang/syntax-highlighting"
-                    ]
-                  },
-              {
-                "group": "OpenCollection YAML",
-                "pages": [
-                  "v2/opencollection-yaml/overview",
-                  "v2/opencollection-yaml/samples",
-                  "v2/opencollection-yaml/structure-reference"
                     ]
                   },
                   {
