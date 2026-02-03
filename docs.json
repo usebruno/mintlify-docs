@@ -15,6 +15,7 @@
             "groups": [
           {
             "group": "Getting Started",
+            "icon": "rocket",
             "pages": [
               {
                 "group": "Introduction",
@@ -58,6 +59,7 @@
               },
               {
                 "group": "Core Features",
+                "icon": "zap",
                 "pages": [
                   {
                     "group": "Send Requests",
@@ -255,15 +257,6 @@
                       "auth/aws-signature",
                       "auth/ntlm",
                       {
-                        "group": "OAuth 2.0 (Legacy)",
-                        "pages": [
-                          "auth/oauth2/overview",
-                          "auth/oauth2/authorization-code",
-                          "auth/oauth2/client-credentials",
-                          "auth/oauth2/password-credentials"
-                        ]
-                      },
-                      {
                         "group": "OAuth 2.0",
                         "pages": [
                           "auth/oauth2-2.0/overview",
@@ -287,6 +280,7 @@
               },
               {
                 "group": "API Tools",
+                "icon": "book-open",
                 "pages": [
                   {
                     "group": "Create Documentation",
@@ -312,6 +306,7 @@
               },
               {
                 "group": "Developer Tools",
+                "icon": "code",
                 "pages": [
                   {
                     "group": "Bruno CLI",
@@ -367,6 +362,7 @@
               },
               {
                 "group": "License Management",
+                "icon": "key",
                 "pages": [
                   "license-overview",
                   {
@@ -403,6 +399,7 @@
               },
               {
                 "group": "Advanced Guides",
+                "icon": "graduation-cap",
                 "pages": [
                   "advanced-guides/starter-guide",
               "advanced-guides/visualize"
