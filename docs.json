@@ -264,7 +264,8 @@
                           "auth/oauth2-2.0/collection-level-configuration",
                           "auth/oauth2-2.0/authorization-code",
                           "auth/oauth2-2.0/client-credentials",
-                          "auth/oauth2-2.0/password-credentials"
+                          "auth/oauth2-2.0/password-credentials",
+                          "auth/oauth2-2.0/system-browser"
                         ]
                       },
                       "auth/add-and-manage-certs"
@@ -933,6 +934,31 @@
     },
     {
       "source": "/auth/oauth2-experimental/password-credentials",
+      "destination": "/auth/oauth2-2.0/password-credentials",
+      "permanent": true
+    },
+    {
+      "source": "/auth/oauth2",
+      "destination": "/auth/oauth2-2.0/overview",
+      "permanent": true
+    },
+    {
+      "source": "/auth/oauth2/overview",
+      "destination": "/auth/oauth2-2.0/overview",
+      "permanent": true
+    },
+    {
+      "source": "/auth/oauth2/authorization-code",
+      "destination": "/auth/oauth2-2.0/authorization-code",
+      "permanent": true
+    },
+    {
+      "source": "/auth/oauth2/client-credentials",
+      "destination": "/auth/oauth2-2.0/client-credentials",
+      "permanent": true
+    },
+    {
+      "source": "/auth/oauth2/password-credentials",
       "destination": "/auth/oauth2-2.0/password-credentials",
       "permanent": true
     },
