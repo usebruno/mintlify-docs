@@ -24,6 +24,24 @@ A collection in Bruno is a structured group of API requests, tests, and related 
 
 Congratulations! You have successfully created your first collection.
 
+<Info>
+  Starting with Bruno v3.1.0, YAML (OpenCollection format) is the default file format when creating new collections. Learn more about [OpenCollection YAML](/opencollection-yaml/overview).
+</Info>
+
+## Automatic Git Configuration
+
+When you create a new collection or workspace, Bruno automatically generates a `.gitignore` file with recommended settings to ensure proper Git hygiene out of the box.
+
+**What's Included in `.gitignore`:**
+- Temporary files and caches
+- Environment variable files with sensitive data
+- Generated metadata
+- System-specific files
+
+<Tip>
+  The automatically generated `.gitignore` file helps prevent accidentally committing sensitive information (like API keys in environment variables) or unnecessary files to version control.
+</Tip>
+
 ## Custom Collection Names
 
 <Info>

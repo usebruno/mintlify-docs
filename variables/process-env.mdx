@@ -6,12 +6,6 @@ title: "Process Environment Variables"
 
 Process environment variables are used to store sensitive information, such as API keys, passwords, and other secret values. These values are typically stored in a .env file. For more details on secret management, refer to the [secret management](/secrets-management/dotenv-file) section.
 
-<Warning>
-  You must create the `.env` file in your local project directory (e.g., using
-  VS Code) to store your process environment variables. Bruno cannot create or
-  manage the `.env` file for you.
-</Warning>
-
 ### Creating a Process Environment Variables
 
 To create process environment variables, you can add a .env file to the root of your Bruno collection. This file will store your secrets, which can then be accessed throughout the collection.
@@ -49,3 +43,7 @@ To access the values stored in the `.env` file, you can use the `process.env` gl
 You can use `process.env.<secret-name>` throughout your Bruno collection to securely manage and access your environment variables.
 
 ![image](/images/screenshots/variables/using-process-env-variables.webp)
+
+<Info>
+Starting from Bruno **v3.1.0**, you can create and manage `.env` files directly inside Bruno at workspace level. Check the [Secret Management - Dotenv File](/secrets-management/dotenv-file) section for more details.
+</Info>

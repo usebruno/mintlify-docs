@@ -42,6 +42,7 @@
                     "pages": [
                       "get-started/import-export-data/import-collections",
                       "get-started/import-export-data/export-collections",
+                      "get-started/import-export-data/import-export-workspace",
                       "get-started/import-export-data/import-export-environments",
                       "get-started/import-export-data/postman-migration",
                       "get-started/import-export-data/script-translator"
