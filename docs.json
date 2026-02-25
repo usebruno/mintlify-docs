@@ -311,6 +311,16 @@
                 "icon": "code",
                 "pages": [
                   {
+                    "group": "AI Agents",
+                    "pages": [
+                      "agents/overview",
+                      "agents/cursor",
+                      "agents/vs-code",
+                      "agents/codex",
+                      "agents/claude"
+                    ]
+                  },
+                  {
                     "group": "Bruno CLI",
                     "pages": [
                       "bru-cli/overview",
