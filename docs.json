@@ -515,7 +515,6 @@
                           {
                             "group": "Debugging",
                             "pages": [
-                              "v2/send-requests/res-data-cookies/debugging/dev-utils",
                               "v2/send-requests/res-data-cookies/debugging/dev-tools",
                               "v2/send-requests/res-data-cookies/debugging/timeline"
                             ]

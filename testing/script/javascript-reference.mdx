@@ -521,6 +521,7 @@ Here are all available variable-related methods:
 | bru.deleteVar(key)           | Deletes a specific variable.                              |
 | bru.deleteAllVars()          | Deletes all runtime variables.                            |
 | bru.getOauth2CredentialVar(key) | Retrieves an OAuth2 credential variable value.         |
+| bru.getSecretVar(key)         | Retrieves a secret variable from a configured secret manager. |
 
 #### Process Environment Variables
 
@@ -595,6 +596,22 @@ Runtime variables are temporary variables that exist only during the execution o
   ```javascript
   const accessToken = bru.getOauth2CredentialVar("access_token");
   ```
+
+#### Secret Variables
+
+- **`getSecretVar(key)`** - Retrieve a secret from a configured secret manager (e.g., HashiCorp Vault, AWS Secrets Manager, Azure Key Vault). The key follows the pattern `<secret-name>.<key-name>`.
+
+  ```javascript
+  const apiKey = bru.getSecretVar('payment-service.api-key');
+  req.setHeader('x-api-key', apiKey);
+
+  const dbPassword = bru.getSecretVar('db-credentials.password');
+  console.log('Secret retrieved successfully');
+  ```
+
+  <Info>
+    Secrets must be configured in your collection's secret manager settings before they can be accessed via `bru.getSecretVar()`. See [Secret Managers](/secrets-management/secret-managers/overview) for setup details.
+  </Info>
 
 ## Runner
 
